@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    overflow: auto;
+    
+    
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 20px; 
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgba(233, 230, 227, 0.9);
+    z-index: 1000;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+   
+  }
+  
+  header .logo {
+    position: relative;
+    font-weight: 700;
+    color: rgb(101, 87, 71);
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.7s;
+    
+  }
+  
+  header ul {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  header ul li a{
+    text-decoration: none;
+    color: rgb(101, 87, 71);
+    font-family: "Patrick Hand", cursive;
+    position: relative;
+    list-style: none;
+    margin: 0 15px;
+    text-decoration: none; 
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  header ul li a:hover{
+    color: rgb(255, 255, 255);
+  }
+  
+  .banner {
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+    /* background: url('/BoczekMeble/Obrazy/Capture.PNG') center center no-repeat; */
+    background-size: cover;
+    
+  }
+  
+  
+  .logo-text{
+    color: rgb(101, 87, 71);
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 0px;
+    transition: 0.7s;
+  }
+  
+  .logo img {
+    vertical-align: middle;
+  }
+  
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .project:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    filter: brightness(70%);
+  }
+
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+
+  
+  .fa-facebook{
+    color: rgb(89, 130, 218);
+    font-size: 2.5vh !important;
+  }
+
+  .nasze-realizacje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 135px;
+    font-family:'Poppins', sans-serif;
+    
+  }
+
+  .gallery {
+    margin-top: 15px !important;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; 
+    justify-items: center;
+    align-items: center; 
+    max-width: 1000px;
+    max-height: auto; 
+    margin: auto;
+    padding: 2vh;
+    
+}
+
+
+ 
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover !important;
+    object-position: center !important;
+    cursor: pointer;
+    grid-auto-flow: dense;
+    
+}
+
+
+
+@media only screen and (min-width: 1640px){
+    header{
+      height:11vh;
+    }
+  
+    .intro {
+      width: 70vw;
+      height: 65vh;
+      top:60%;
+    }
+  
+  .intro .text {
+    font-size: 0.8vw;
+  
+  }}
+  
+  @media only screen and (min-width: 1500px) and (max-width: 1639px) {
+    header{
+      height:11vh;
+    }
+  
+    .intro {
+      width: 70vw;
+      height: 60vh;
+      top:60%;
+    }
+  
+  .intro .text {
+    font-size: 0.8vw;
+  
+  }}
+  
+  @media only screen and (min-width: 1350px) and (max-width: 1499px) {
+    header{
+      height:11vh;
+    }
+  
+    .intro {
+      width: 70vw;
+      height: 60vh;
+      top:60%;
+    }
+  
+  .intro .text {
+    font-size: 0.85vw;
+    width: 46.5vh;
+  }}
+   
+  @media only screen and (min-width: 1200px) and (max-width: 1349px) {
+    .intro {
+      width: 80vw;
+      height: 58vh;
+      top:60%;
+    }
+  
+    header{
+      height:11vh;
+    }
+  
+    .intro .text {
+      font-size: 0.85vw;
+      width: 50%;
+    }
+  
+    .logo-text{
+      font-size: 1.5rem;
+    }
+  
+    header ul li{
+      font-size: 0.9rem;
+      
+    }
+  }
+   
+  @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+    .intro {
+      width: 80vw;
+      height: 70vh;
+      top:60%;
+    }
+  
+    .logo-text{
+      font-size: 1.5rem;
+    }
+  
+    .intro .text {
+      font-size: 1.1vw;
+    }
+  
+    header{
+      height:11vh;
+    }
+   
+     header ul li{
+      font-size: 0.9rem;
+    }
+  }
+   
+  @media only screen and (min-width: 840px) and (max-width: 1023px) {
+    .intro {
+      width: 80vw;
+      height: 70vh;
+      top: 60%;
+    }
+  
+    .intro .text {
+      font-size: 1.1vw;
+    }
+  
+    header ul li {
+      font-size: 0.9rem;
+      /* padding: 0px;
+      margin: 0.4rem; */
+    }
+    header{
+      height:11vh;
+    }
+  }
+  
+  @media only screen and (min-width: 840px) and (max-width: 959px) {
+    header {
+      height: 11vh;
+      font-size: 0.6rem;
+    }
+    .intro .text {
+      font-size: 1.1vw;
+      
+    }
+  
+    .logo-text {
+      font-size: 1.2rem;
+    }
+  
+    header ul li {
+      font-size: 0.8rem;
+      padding: 0px;
+      margin: 0.4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 846px) {
+  
+    header {
+      height: 11vh;
+      font-size: 0.6rem;
+    }
+    .intro{
+      width: 75vw;
+      height: 60vh;
+    }
+    
+    /* .intro img{
+      width: 30vw;
+      height: 30vh;
+    } */
+    .logo-text,
+    header ul {
+      white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+      margin-top: 0;
+      
+    }
+    
+  
+    .intro .text{
+      width: 50%;
+      font-size: 1.1vw;
+      
+    }
+  
+  
+    .logo-text{
+      font-size: 0.9rem;
+    }
+    
+    header ul li{
+      font-size: 0.8rem;
+      padding: 0px;
+      margin: 0.4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 780px) {
+    
+  
+    .intro {
+      width: 80vw;
+      height: 70vh;
+      top:60%;
+    }
+  
+   
+    .logo-text{
+      font-size: 0.6rem;
+      width: 30%;
+      margin-top: -0.5rem;
+      
+     }
+   
+     header ul li{
+       font-size: 0.6rem;
+       padding: 0px;
+      
+     }
+  }
+  
+  @media only screen and (max-width: 580px) {
+    .intro img {
+      display: none;
+    }
+  
+    .intro .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 0.5rem;
+      margin: 0px;
+      
+    }
+  
+    .logo img {
+      display: none;
+    }
+  
+    header ul,
+    .logo-text {
+      vertical-align: middle; /* Dodanie właściwości vertical-align dla wyrównania horyzontalnego */
+    }
+  
+    .intro{
+      width: 75vw;
+      height: 50vh;
+    }
+  
+    .cross i {
+      font-size: 22px;
+      
+    }
+  
+  }
+
+  @media (max-height: 100vh) {
+    body {
+      overflow: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
