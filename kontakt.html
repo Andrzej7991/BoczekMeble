@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boczek - meble na wymiar</title>
+    <link rel="stylesheet" type="text/css" href="/BoczekMeble/kontakt.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#banner" class="logo">
+                <img src="/BoczekMeble/Obrazy/logo.png" alt="Logo">
+                <div class="logo-text">Boczek Meble na <span class="wymiar">wymiar</span></div>
+            </a>
+            
+            <!-- <button class="nav-btn"> -->
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61555316223790" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li><a href="index.html" class="O-Nas fixed" >O nas</a></li>
+                <li><a href="Moje-realizacje.html">Nasze realizacje</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            
+        </header>
+    </section>
+
+     <section id="kontakt">
+        <div class="kontakt-div">
+            <p class="napis_skad"><i class="fas fa-map-marker-alt location-mark"></i>Jesteśmy do Twojej dyspozycji!</p>
+            <div class="map-and-contact">
+                <div id="map" data-aos="zoom-in" data-aos-duration="1000"></div>
+                <div class="contact-info" data-aos="zoom-in" data-aos-duration="1000">
+                    <button><span class="fas fa-phone"></span> +48 921-123-512 </button>
+                    <button><i class="fas fa-comments"></i> Aktywuj chat</button>
+                    <button><i class="fas fa-envelope"></i>meble.boczek@gmail.com</button>
+                    <div class="contact-form">
+                        <h1>Zapytaj o wycene</h1>
+                        <form action="https://formsubmit.co/meble.boczek@gmail.com" method="POST" enctype="multipart/form-data">
+                            <input type="text" name="name" placeholder="Imię">
+                            <input type="email" name="email" required placeholder="Email">          
+                            <textarea name="msg" placeholder="Text" required></textarea>
+                            <input type="file" name="file" accept="*">
+                            <button type="submit" class="submitBTN">Wyślij wiadomość</button>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+        <!-- JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="/BoczekMeble/kontakt.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
