@@ -119,8 +119,9 @@
   .nasze-realizacje{
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 135px;
     font-family:'Poppins', sans-serif;
     
@@ -364,6 +365,10 @@
     .intro img {
       display: none;
     }
+    header ul li{
+        
+        margin: -2.5vw;
+      }
   
     .intro .text {
       display: flex;
@@ -412,16 +417,53 @@
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .nasze-realizacje{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-wrap: wrap !important;
+    }
 }
 
 @media only screen and (max-width: 650px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .nasze-realizacje{
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 20px;
+        text-wrap: wrap !important;
+    }
+
+    header ul li{
+        
+        margin: -2.5vw;
+      }
 }
 
 @media only screen and (max-width: 450px) {
     .gallery {
         grid-template-columns: repeat(1, 1fr);
     }
+    
+
+    .nasze-realizacje{
+        text-align: center;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 20px;
+        text-wrap: wrap !important;
+    }
+
+    header ul li{
+        
+        margin: -2.5vw;
+      }
+
 }
