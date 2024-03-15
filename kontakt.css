@@ -421,6 +421,10 @@ form textarea:focus {
   form textarea {
     width: 80%; 
 }
+
+#map {
+  width: 90%;
+}
   .intro {
     width: 80vw;
     height: 70vh;
@@ -456,6 +460,9 @@ form textarea:focus {
   form input[type="email"],
   form textarea {
     width: 80%; 
+}
+#map {
+  width: 90%;
 }
   header {
     height: 11vh;
@@ -493,7 +500,9 @@ form input[type="text"],
 }
 
 @media only screen and (max-width: 846px) {
-
+  #map {
+    width: 90%;
+  }
   header {
     height: 11vh;
     font-size: 0.6rem;
@@ -545,7 +554,9 @@ form input[type="text"],
 }
 
 @media only screen and (max-width: 780px) {
-  
+  #map {
+    width: 90%;
+  }
 
   .intro {
     width: 80vw;
@@ -591,7 +602,9 @@ form input[type="text"],
     display: none;
   }
 
-  
+  #map {
+    width: 90%;
+  }
 
   .intro .text {
     display: flex;
