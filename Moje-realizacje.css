@@ -20,7 +20,7 @@
     justify-content: flex-start;
     align-items: center;
     transition: 0.6s;
-    padding: 20px 20px; 
+    padding: 10px 10px; 
     font-weight: bold;
     font-size: 1rem;
     background-color: rgba(233, 230, 227, 0.9);
@@ -116,6 +116,8 @@
     font-size: 2.5vh !important;
   }
 
+  
+
   .nasze-realizacje{
     display: flex;
     align-items: center;
@@ -124,22 +126,19 @@
     font-size: 25px;
     margin-top: 135px;
     font-family:'Poppins', sans-serif;
-    
+    margin-top: 17vh;
   }
 
   .gallery {
-    margin-top: 15px !important;
+    margin-top: 16px !important;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px; 
+    grid-template-columns: repeat(9, 2fr);
+    gap: 10px; /* Ustawia odstęp pomiędzy kolumnami na maksymalnie 10px */
     justify-items: center;
-    align-items: center; 
-    max-width: 1000px;
-    max-height: auto; 
-    margin: auto;
-    padding: 2vh;
+    align-items: center;
     
 }
+
 
 
  
@@ -151,28 +150,13 @@
     object-position: center !important;
     cursor: pointer;
     grid-auto-flow: dense;
-    
+   
+  
 }
 
 
-
-@media only screen and (min-width: 1640px){
-    header{
-      height:11vh;
-    }
   
-    .intro {
-      width: 70vw;
-      height: 65vh;
-      top:60%;
-    }
-  
-  .intro .text {
-    font-size: 0.8vw;
-  
-  }}
-  
-  @media only screen and (min-width: 1500px) and (max-width: 1639px) {
+  @media only screen and (min-width: 1500px) and (max-width: 1680px) {
     header{
       height:11vh;
     }
@@ -184,9 +168,16 @@
     }
   
   .intro .text {
-    font-size: 0.8vw;
+    font-size: 0.8vw;}
+
+    .gallery {
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+  }
+
   
-  }}
+  
+  }
   
   @media only screen and (min-width: 1350px) and (max-width: 1499px) {
     header{
@@ -202,7 +193,14 @@
   .intro .text {
     font-size: 0.85vw;
     width: 46.5vh;
-  }}
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+}
    
   @media only screen and (min-width: 1200px) and (max-width: 1349px) {
     .intro {
@@ -226,8 +224,13 @@
   
     header ul li{
       font-size: 0.9rem;
-      
     }
+
+    .gallery {
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+  }
+
   }
    
   @media only screen and (min-width: 1024px) and (max-width: 1199px) {
